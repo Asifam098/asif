@@ -8,12 +8,12 @@ class Development(Config):
     # the name to display in your alive message
     ALIVE_NAME = "Շђคภ๏ร"
     # create any PostgreSQL database (i recommend to use elephantsql) and paste that link here
-    DB_URI = "YOUR VALUE" # IF U DONT KNOW HOW TO MAKE THEN GO IN THANOS SUPPORT AND TYPE #DB_URI 
+    DB_URI = "YOUR VALUE"  # IF U DONT KNOW HOW TO MAKE THEN GO IN THANOS SUPPORT AND TYPE #DB_URI
     # After cloning the repo and installing requirements do python3 stringsetup.py an fill that value with this
-    STRING_SESSION = "YOUR VALUE"# IF U DONT KNOW HOW TO MAKE THEN GO IN THANOS SUPPORT AND TYPE #session 
+    STRING_SESSION = "YOUR VALUE"  # IF U DONT KNOW HOW TO MAKE THEN GO IN THANOS SUPPORT AND TYPE #session
     # --------------------------------------------------
 
-    TG_BOT_TOKEN = "Your value"# create a new bot in @botfather and fill the following vales with bot token
+    TG_BOT_TOKEN = "Your value"  # create a new bot in @botfather and fill the following vales with bot token
     # create a private group and a rose bot to it and type /id and paste that id here (replace that -100 with that group id)
     PRIVATE_GROUP_BOT_API_ID = -1001638681164
     # command handler
@@ -24,5 +24,5 @@ class Development(Config):
     SUDO_COMMAND_HAND_LER = "."
     # External plugins repo
     EXTERNAL_REPO = "https://github.com/rishabhanand2/tha_plugins"
-    #don't edit this 
-    THANOSABUSE = "False"#don't edit this
+    # don't edit this
+    THANOSABUSE = "False"  # don't edit this

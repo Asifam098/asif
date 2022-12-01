@@ -1,18 +1,17 @@
-import contextlib
-import sys
 import asyncio
+import contextlib
 import os
 import re
+import sys
 from os import system
-
-from userbot import *
-from telethon import Button, events
-from . import *
-import userbot
-from userbot import BOTLOG_CHATID, PM_LOGGER_GROUP_ID
 
 from telethon import Button, custom, events
 
+import userbot
+from userbot import *
+from userbot import BOTLOG_CHATID, PM_LOGGER_GROUP_ID
+
+from . import *
 from .Config import Config
 from .core.logger import logging
 from .core.session import THANOSPRO, tgbot
@@ -32,12 +31,15 @@ bot = THANOSPRO
 print(userbot.__copyright__)
 print(f"Licensed under the terms of the {userbot.__license__}")
 
+
 async def rishabh():
     THANOS_USER = bot.me.first_name
     The_THANOSBOY = bot.uid
     cat_mention = f"[{THANOS_USER}](tg://user?id={The_THANOSBOY})"
     name = f"{cat_mention}'s Assistant"
-    description = f"I am Assistant Of {cat_mention}.This Bot Can Help U To Chat With My Master"
+    description = (
+        f"I am Assistant Of {cat_mention}.This Bot Can Help U To Chat With My Master"
+    )
     starkbot = await THANOSPRO.tgbot.get_me()
     bot_name = starkbot.first_name
     botname = f"@{starkbot.username}"
@@ -67,9 +69,7 @@ async def rishabh():
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_file(
-                "@BotFather", "userbot/helpers/resources/pics/main.jpg"
-            )
+            await bot.send_file("@BotFather", "userbot/helpers/resources/pics/main.jpg")
             await asyncio.sleep(2)
         except Exception as e:
             print(e)
@@ -457,7 +457,8 @@ async def users(event):
         grpid = await x.get_response()
         await delgroup(strses.text, grpid.text)
         await event.reply(
-            "Deleted the Channel/Group Thanks For using THANOSCEOSBot.", buttons=keyboard
+            "Deleted the Channel/Group Thanks For using THANOSCEOSBot.",
+            buttons=keyboard,
         )
 
 
@@ -682,14 +683,14 @@ async def startup_process():
 
 
 async def externalrepo():
-    #if Config.EXTERNAL_REPO:
-       # await install_externalrepo(
-            #Config.EXTERNAL_REPO, Config.EXTERNAL_REPOBRANCH, "xtraplugins"
-        #)
-    #if Config.THANOSABUSE:
-       # await install_externalrepo(
-           # Config.THANOSABUSE_REPO, Config.THANOSABUSE_REPOBRANCH, "badcatext"
-        #)
+    # if Config.EXTERNAL_REPO:
+    # await install_externalrepo(
+    # Config.EXTERNAL_REPO, Config.EXTERNAL_REPOBRANCH, "xtraplugins"
+    # )
+    # if Config.THANOSABUSE:
+    # await install_externalrepo(
+    # Config.THANOSABUSE_REPO, Config.THANOSABUSE_REPOBRANCH, "badcatext"
+    # )
     if Config.VCMODE:
         await install_externalrepo(
             "https://github.com/thanospros/THANOS-VC", "test", "catvc"

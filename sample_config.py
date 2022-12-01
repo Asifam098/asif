@@ -120,7 +120,9 @@ class Config(object):
     G_DRIVE_DATA = os.environ.get("G_DRIVE_DATA", None)
     G_DRIVE_INDEX_LINK = os.environ.get("G_DRIVE_INDEX_LINK", None)
     # For transfer channel 2 step verification code of telegram
-    TG_2STEP_VERIFITHANOSSION_CODE = os.environ.get("TG_2STEP_VERIFITHANOSSION_CODE", None)
+    TG_2STEP_VERIFITHANOSSION_CODE = os.environ.get(
+        "TG_2STEP_VERIFITHANOSSION_CODE", None
+    )
     # JustWatch Country for watch plugin
     WATCH_COUNTRY = os.environ.get("WATCH_COUNTRY", "IN")
     # Last.fm plugin  https://telegra.ph/Guide-for-LASTFM-02-03
@@ -169,7 +171,9 @@ class Config(object):
     BOTLOG_CHATID = 0
     # extra plugins realted vars below  4
     EXTERNAL_REPOBRANCH = os.environ.get("EXTERNAL_REPOBRANCH", "main")
-    THANOSABUSE_REPO = os.environ.get("THANOSABUSE_REPO", "https://github.com/rishabhanand2/tha_plugins")
+    THANOSABUSE_REPO = os.environ.get(
+        "THANOSABUSE_REPO", "https://github.com/rishabhanand2/tha_plugins"
+    )
     if THANOSABUSE_REPO and not url(THANOSABUSE_REPO):
         THANOSABUSE_REPO = "https://github.com/rishabhanand2/tha_plugins"
     THANOSABUSE_REPOBRANCH = os.environ.get("THANOSABUSE_REPOBRANCH", "THANOSABUSE")

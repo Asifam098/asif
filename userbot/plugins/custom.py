@@ -104,7 +104,9 @@ async def bad(event):  # sourcery no-metrics  # sourcery skip: low-code-quality
                     )
 
                 USERINFO = await THANOSPRO.get_entity(THANOSPRO.uid)
-                FULL_USERINFO = (await THANOSPRO(GetFullUserRequest(THANOSPRO.uid))).full_user
+                FULL_USERINFO = (
+                    await THANOSPRO(GetFullUserRequest(THANOSPRO.uid))
+                ).full_user
                 addgvar("FIRST_NAME", USERINFO.first_name)
                 addgvar("DEFAULT_NAME", USERINFO.first_name)
                 if USERINFO.last_name:

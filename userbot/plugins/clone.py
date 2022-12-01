@@ -6,7 +6,14 @@ from telethon.tl.functions.users import GetFullUserRequest
 
 from ..Config import Config
 from ..sql_helper.globals import gvarstatus
-from . import ALIVE_NAME, BOTLOG, BOTLOG_CHATID, THANOSPRO, edit_delete, get_user_from_event
+from . import (
+    ALIVE_NAME,
+    BOTLOG,
+    BOTLOG_CHATID,
+    THANOSPRO,
+    edit_delete,
+    get_user_from_event,
+)
 
 plugin_category = "utils"
 DEFAULTUSER = gvarstatus("FIRST_NAME") or ALIVE_NAME

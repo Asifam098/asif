@@ -76,9 +76,7 @@ def main_menu():
     ]
     if Config.THANOSABUSE:
         switch_button = [
-            (
-                Button.inline(f"➕ Extra ({len(GRP_INFO['extra'])})", data="extra_menu"),
-            ),
+            (Button.inline(f"➕ Extra ({len(GRP_INFO['extra'])})", data="extra_menu"),),
             (Button.inline("🔒 Close Menu", data="close"),),
         ]
         buttons = buttons[:-1] + switch_button

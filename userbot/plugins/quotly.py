@@ -16,7 +16,7 @@ from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.utils import get_display_name
 
-from userbot import Convert, THANOSPRO
+from userbot import THANOSPRO, Convert
 
 from ..core.logger import logging
 from ..core.managers import edit_delete, edit_or_reply

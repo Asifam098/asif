@@ -8,7 +8,7 @@ from telethon.errors import UserIsBlockedError
 from telethon.events import CallbackQuery, StopPropagation
 from telethon.utils import get_display_name
 
-from userbot import Config, THANOSPRO
+from userbot import THANOSPRO, Config
 
 from ..core import check_owner, pool
 from ..core.logger import logging
@@ -416,7 +416,9 @@ async def send_flood_alert(user_) -> None:  # sourcery skip: low-code-quality
             )
         except UserIsBlockedError:
             if BOTLOG:
-                await THANOSPRO.tgbot.send_message(BOTLOG_CHATID, "**Unblock your bot !**")
+                await THANOSPRO.tgbot.send_message(
+                    BOTLOG_CHATID, "**Unblock your bot !**"
+                )
     if FloodConfig.ALERT[user_.id].get("fa_id") is None and fa_msg:
         FloodConfig.ALERT[user_.id]["fa_id"] = fa_msg.id
 

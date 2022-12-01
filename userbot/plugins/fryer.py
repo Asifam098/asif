@@ -7,7 +7,7 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.contacts import UnblockRequest as unblock
 from telethon.tl.types import DocumentAttributeFilename
 
-from userbot import Convert, THANOSPRO
+from userbot import THANOSPRO, Convert
 
 from ..core.managers import edit_or_reply
 from ..helpers.functions import delete_conv

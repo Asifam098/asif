@@ -9,7 +9,7 @@ import urllib3
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 
-from userbot import HEROKU_APP, UPSTREAM_REPO_URL, THANOSPRO
+from userbot import HEROKU_APP, THANOSPRO, UPSTREAM_REPO_URL
 
 from ..Config import Config
 from ..core.logger import logging
@@ -254,16 +254,13 @@ async def upstream(event):
     # Special case for deploy
     if changelog == "" and not force_update:
         await event.edit(
-            "\n`THANOSBOT is`  **up-to-date**  `with`  "
-            f"**{UPSTREAM_REPO_BRANCH}**\n"
+            "\n`THANOSBOT is`  **up-to-date**  `with`  " f"**{UPSTREAM_REPO_BRANCH}**\n"
         )
         return repo.__del__()
     if conf == "" and not force_update:
         await print_changelogs(event, ac_br, changelog)
         await event.delete()
-        return await event.respond(
-            f"do `{cmdhd}update deploy` to update the THANOSBOT"
-        )
+        return await event.respond(f"do `{cmdhd}update deploy` to update the THANOSBOT")
 
     if force_update:
         await event.edit(

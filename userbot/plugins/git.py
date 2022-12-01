@@ -34,8 +34,7 @@ GIT_TEMP_DIR = "./temp/"
 async def source(e):
     "Source code link of userbot"
     await edit_or_reply(
-        e,
-        "Click [here](https://github.com/rishabhanand2/THANOS-V2) тнαησѕ-ν❷ repo"
+        e, "Click [here](https://github.com/rishabhanand2/THANOS-V2) тнαησѕ-ν❷ repo"
     )
 
 

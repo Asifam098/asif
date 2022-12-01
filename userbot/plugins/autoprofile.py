@@ -26,7 +26,7 @@ from ..sql_helper.global_list import (
     rm_from_list,
 )
 from ..sql_helper.globals import addgvar, delgvar, gvarstatus
-from . import BOTLOG, BOTLOG_CHATID, _catutils, THANOSPRO, edit_delete, logging
+from . import BOTLOG, BOTLOG_CHATID, THANOSPRO, _catutils, edit_delete, logging
 
 plugin_category = "tools"
 DEFAULTUSERBIO = gvarstatus("DEFAULT_BIO") or " ᗯᗩᏆᎢᏆᑎᏀ ᏞᏆᏦᗴ ᎢᏆᗰᗴ  "

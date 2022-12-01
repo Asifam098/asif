@@ -23,7 +23,9 @@ if Config.PLUGIN_CHANNEL:
             if os.path.exists(f"userbot/plugins/{plugin_name}"):
                 return
             downloaded_file_name = await THANOSPRO.download_media(
-                await THANOSPRO.get_messages(Config.PLUGIN_CHANNEL, ids=plugin_to_install),
+                await THANOSPRO.get_messages(
+                    Config.PLUGIN_CHANNEL, ids=plugin_to_install
+                ),
                 "userbot/plugins/",
             )
             path1 = Path(downloaded_file_name)

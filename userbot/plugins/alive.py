@@ -13,7 +13,7 @@ from telethon.errors.rpcerrorlist import (
 )
 from telethon.events import CallbackQuery
 
-from userbot import StartTime, THANOSPRO, catversion
+from userbot import THANOSPRO, StartTime, catversion
 
 from ..Config import Config
 from ..core.managers import edit_or_reply

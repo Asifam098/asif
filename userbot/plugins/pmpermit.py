@@ -404,7 +404,9 @@ async def do_pm_spam_action(event, chat):
         return
 
 
-@THANOSPRO.rishabh_cmd(incoming=True, func=lambda e: e.is_private, edited=False, forword=None)
+@THANOSPRO.rishabh_cmd(
+    incoming=True, func=lambda e: e.is_private, edited=False, forword=None
+)
 async def on_new_private_message(event):
     if gvarstatus("pmpermit") is None:
         return
@@ -428,7 +430,9 @@ async def on_new_private_message(event):
     await do_pm_permit_action(event, chat)
 
 
-@THANOSPRO.rishabh_cmd(outgoing=True, func=lambda e: e.is_private, edited=False, forword=None)
+@THANOSPRO.rishabh_cmd(
+    outgoing=True, func=lambda e: e.is_private, edited=False, forword=None
+)
 async def you_dm_other(event):
     if gvarstatus("pmpermit") is None:
         return

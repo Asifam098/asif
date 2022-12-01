@@ -15,7 +15,10 @@ class THANOSBroadcast(BASE):
         self.group_id = str(group_id)
 
     def __repr__(self):
-        return "<THANOS Broadcast channels '%s' for %s>" % (self.group_id, self.keywoard)
+        return "<THANOS Broadcast channels '%s' for %s>" % (
+            self.group_id,
+            self.keywoard,
+        )
 
     def __eq__(self, other):
         return (

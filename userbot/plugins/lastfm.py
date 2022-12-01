@@ -154,7 +154,9 @@ async def get_curr_track(lfmbio):  # sourcery no-metrics
             AboutTooLongError,
         ) as err:
             if BOTLOG and LASTFM_.LastLog:
-                await THANOSPRO.send_message(BOTLOG_CHATID, f"Error changing bio:\n{err}")
+                await THANOSPRO.send_message(
+                    BOTLOG_CHATID, f"Error changing bio:\n{err}"
+                )
         await sleep(2)
     LASTFM_.RUNNING = False
 

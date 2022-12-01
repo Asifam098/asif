@@ -256,9 +256,7 @@ async def _(event):  # sourcery no-metrics  # sourcery skip: low-code-quality
         loadcmds = []
         for plugin in input_str:
             if plugin not in PLG_INFO:
-                errors += (
-                    f"`{plugin}` __There is no such plugin in your THANOSBOT__.\n"
-                )
+                errors += f"`{plugin}` __There is no such plugin in your THANOSBOT__.\n"
             else:
                 loadcmds += PLG_INFO[plugin]
     else:
@@ -347,9 +345,7 @@ async def _(event):  # sourcery no-metrics  # sourcery skip: low-code-quality
         flagcmds = []
         for plugin in input_str:
             if plugin not in PLG_INFO:
-                errors += (
-                    f"`{plugin}` __There is no such plugin in your THANOSBOT__.\n"
-                )
+                errors += f"`{plugin}` __There is no such plugin in your THANOSBOT__.\n"
             else:
                 flagcmds += PLG_INFO[plugin]
     else:

@@ -5,7 +5,15 @@ from pathlib import Path
 from ..Config import Config
 from ..core import CMD_INFO, PLG_INFO
 from ..utils import load_module, remove_plugin
-from . import CMD_HELP, CMD_LIST, SUDO_LIST, THANOSPRO, edit_delete, edit_or_reply, reply_id
+from . import (
+    CMD_HELP,
+    CMD_LIST,
+    SUDO_LIST,
+    THANOSPRO,
+    edit_delete,
+    edit_or_reply,
+    reply_id,
+)
 
 plugin_category = "tools"
 

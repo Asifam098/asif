@@ -14,7 +14,7 @@ from ..Config import Config
 from ..core.managers import edit_or_reply
 from ..helpers.functions import get_readable_time
 from ..sql_helper.globals import gvarstatus
-from . import StartTime, THANOSPRO, mention, reply_id
+from . import THANOSPRO, StartTime, mention, reply_id
 
 plugin_category = "tools"
 

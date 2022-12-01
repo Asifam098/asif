@@ -16,7 +16,7 @@ import urllib
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterDocument
 
-from userbot import Convert, THANOSPRO
+from userbot import THANOSPRO, Convert
 
 from ..core.managers import edit_delete, edit_or_reply
 from ..helpers.functions import (

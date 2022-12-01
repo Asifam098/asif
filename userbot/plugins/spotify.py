@@ -45,7 +45,7 @@ from ..helpers.functions.functions import (
 )
 from ..helpers.utils import reply_id
 from ..sql_helper import global_collectionjson as glob_db
-from . import BOTLOG, BOTLOG_CHATID, LyricsGen, THANOSPRO
+from . import BOTLOG, BOTLOG_CHATID, THANOSPRO, LyricsGen
 
 SPOTIFY_CLIENT_ID = Config.SPOTIFY_CLIENT_ID
 SPOTIFY_CLIENT_SECRET = Config.SPOTIFY_CLIENT_SECRET
